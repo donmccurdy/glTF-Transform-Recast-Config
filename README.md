@@ -25,6 +25,14 @@ gltf-transform recast --config ./config.js --allow-net \
 
 To import a NavMesh in Recast, see Recast [import/export documentation](https://github.com/isaac-mason/recast-navigation-js#importing-and-exporting).
 
+## Installation
+
+This config file is not published to npm. To use it, copy `config.js` into a project directory, and then install dependencies:
+
+```bash
+npm install --save @gltf-transform/core @gltf-transform/extensions @gltf-transform/functions @gltf-transform/cli recast-navigation
+```
+
 ## Troubleshooting
 
 If you see `Cannot read properties of null` or other particularly-opaque errors when
