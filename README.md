@@ -11,16 +11,10 @@ Example:
 
 ```bash
 # Recast NavMesh (for Recast/Detour only)
-gltf-transform recast --config ./config.js --allow-net \
-	--format recast  \
-	https://navmesh.isaacmason.com/assets/dungeon-BKclVJth.gltf \
-	./navmesh.bin
+gltf-transform recast --config ./config.js --format recast input.glb navmesh.bin
 
 # glTF NavMesh (for all other navigation libraries)
-gltf-transform recast --config ./config.js --allow-net \
-	--format recast  \
-	https://navmesh.isaacmason.com/assets/dungeon-BKclVJth.gltf \
-	./navmesh.glb
+gltf-transform recast --config ./config.js --format glb input.glb navmesh.glb
 ```
 
 To import a NavMesh in Recast, see Recast [import/export documentation](https://github.com/isaac-mason/recast-navigation-js#importing-and-exporting).
