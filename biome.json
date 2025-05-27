@@ -1,0 +1,12 @@
+{
+	"formatter": {
+		"ignore": ["package.json"],
+		"indentStyle": "tab",
+		"lineWidth": 80
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	}
+}
